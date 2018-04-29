@@ -1,5 +1,5 @@
 obj-m := myrealtek.o
-myrealtek-objs := r8169.o
+myrealtek-objs := realtek.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules

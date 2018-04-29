@@ -34,7 +34,7 @@
 #include <asm/irq.h>
 
 #define RTL8169_VERSION "2.3LK-NAPI"
-#define MODULENAME "r8169"
+#define MODULENAME "realtek"
 #define PFX MODULENAME ": "
 
 #define FIRMWARE_8168D_1	"rtl_nic/rtl8168d-1.fw"
@@ -8435,8 +8435,8 @@ static int rtl_init_one(struct pci_dev *pdev, const struct pci_device_id *ent)
 	dev->hw_features |= NETIF_F_RXFCS;
 
 	/* MTU range: 60 - hw-specific max */
-	dev->min_mtu = ETH_ZLEN;
-	dev->max_mtu = rtl_chip_infos[chipset].jumbo_max;
+	//dev->min_mtu = ETH_ZLEN;
+	//dev->max_mtu = rtl_chip_infos[chipset].jumbo_max;
 
 	tp->hw_start = cfg->hw_start;
 	tp->event_slow = cfg->event_slow;
