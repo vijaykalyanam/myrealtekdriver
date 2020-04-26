@@ -1,0 +1,1558 @@
+Aug 20 11:12:10 vkalyanam-Lenovo-B41-80 kernel: [ 1330.130733] device enp1s0 entered promiscuous mode
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245782] xmit dump stack-------------start
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245788] PACKET: l2->h_proto = 0x806
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245791] L2 PROTO :0x806
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245796] L3 VERSION :0x0 ID :1540 PROTO :0x3900
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245804] CPU: 0 PID: 4635 Comm: a.out Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245807] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245810] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245827]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245846]  rtl8169_start_xmit+0xbc/0x800 [realtek]
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245857]  ? dev_queue_xmit_nit+0x203/0x240
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245866]  dev_hard_start_xmit+0x97/0x1f0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245875]  sch_direct_xmit+0xfc/0x1c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245884]  __dev_queue_xmit+0x23c/0x5c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245892]  dev_queue_xmit+0x10/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245898]  arp_xmit+0x38/0xa0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245905]  arp_send_dst.part.18+0x38/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245911]  arp_solicit+0xf7/0x2b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245918]  ? skb_clone+0x4e/0xa0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245924]  ? __skb_clone+0x2e/0x110
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245930]  neigh_probe+0x4a/0x70
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245937]  __neigh_event_send+0x1e8/0x230
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245944]  neigh_resolve_output+0x122/0x1b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245951]  ip_finish_output2+0x186/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245957]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245963]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245969]  ip_output+0x73/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245976]  ? alloc_pages_current+0x95/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245982]  ip_local_out+0x35/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245988]  ip_queue_xmit+0x157/0x3d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245994]  ? __kmalloc_reserve.isra.36+0x31/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.245999]  ? __skb_clone+0x2e/0x110
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246005]  tcp_transmit_skb+0x562/0x950
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246011]  tcp_connect+0x605/0x810
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246018]  tcp_v4_connect+0x45f/0x580
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246027]  __inet_stream_connect+0xb2/0x330
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246034]  ? __handle_mm_fault+0xb0a/0x10f0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246043]  inet_stream_connect+0x3b/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246051]  SYSC_connect+0xd9/0x110
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246061]  ? __do_page_fault+0x265/0x4e0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246069]  SyS_connect+0xe/0x10
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246079]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246085] RIP: 0033:0x7fcb256ee0f0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246089] RSP: 002b:00007ffd023f3208 EFLAGS: 00000246 ORIG_RAX: 000000000000002a
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246096] RAX: ffffffffffffffda RBX: 00007ffd023f31c0 RCX: 00007fcb256ee0f0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246099] RDX: 0000000000000010 RSI: 00007ffd023f3230 RDI: 0000000000000003
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246103] RBP: 0000000000000000 R08: 1999999999999999 R09: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246106] R10: 000000000000012a R11: 0000000000000246 R12: 0000000000400a8f
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246109] R13: 00007ffd023f31c2 R14: 0000000000400a8f R15: 00007ffd023f31c8
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246114] xmit dump stack-------------End
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246120] XMIT SUCCESS
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246334] INTERRUPT:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246340] INTERRUPT DISABLED ON HW
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246341] NAPI INITITING
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246344] NAPI INITITING DONE
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246345] INTERRUPT ACKNOWLEDGED
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246352] NAPI POLL START -------------------- budget :64
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246355]  Interrupt Status :rtl_rx
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246361] NAPI RECEIVE SKB -----
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246363] L2 PROTO :0x806
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246367] L3 VERSION :0x2 ID :9226 PROTO :0xa00
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246371] napi_skb_finish ->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246374] __netif_receive_skb_core --->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246381] CPU: 2 PID: 0 Comm: swapper/2 Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246384] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246386] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246390]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246402]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246413]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246422]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246430]  netif_receive_skb_internal+0x32/0xa0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246437]  napi_gro_receive+0xe7/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246453]  rtl8169_poll+0x6b9/0x760 [realtek]
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246463]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246472]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246480]  irq_exit+0xb6/0xc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246486]  do_IRQ+0x4f/0xd0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246492]  common_interrupt+0x89/0x89
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246505] RIP: 0010:cpuidle_enter_state+0x12b/0x2b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246510] RSP: 0018:ffffb95540cdfe68 EFLAGS: 00200246 ORIG_RAX: ffffffffffffff9d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246516] RAX: 0000000000000000 RBX: 0000000000000006 RCX: 000000000000001f
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246520] RDX: 0000000000000000 RSI: ffff9a6d92518b58 RDI: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246523] RBP: ffffb95540cdfea0 R08: ffff9a6d925183e4 R09: 0000000000000018
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246526] R10: ffffb95540cdfe38 R11: 0000000000000080 R12: 0000000000000006
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246529] R13: ffff9a6d92522708 R14: ffffffff9bec3598 R15: 0000013b4f4da275
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246532]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246545]  ? cpuidle_enter_state+0x119/0x2b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246554]  cpuidle_enter+0x17/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246562]  call_cpuidle+0x23/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246567]  do_idle+0x17f/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246574]  cpu_startup_entry+0x71/0x80
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246583]  start_secondary+0x151/0x190
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246590]  secondary_startup_64+0x9f/0x9f
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246595] -------------------END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246600] deliver_skb ->type :[300] enp1s0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246608] Calling Function Pointer.....
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246627] xmit dump stack-------------start
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246629] PACKET: l2->h_proto = 0x800
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246631] L2 PROTO :0x800
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246634] L3 VERSION :0x4 ID :53418 PROTO :0x600
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246640] CPU: 2 PID: 0 Comm: swapper/2 Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246643] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246645] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246648]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246655]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246668]  rtl8169_start_xmit+0xbc/0x800 [realtek]
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246677]  ? dev_queue_xmit_nit+0x203/0x240
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246686]  dev_hard_start_xmit+0x97/0x1f0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246695]  sch_direct_xmit+0xfc/0x1c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246703]  __dev_queue_xmit+0x23c/0x5c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246712]  dev_queue_xmit+0x10/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246719]  neigh_resolve_output+0x10c/0x1b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246726]  neigh_update+0x542/0x740
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246733]  arp_process+0x20d/0x6d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246740]  arp_rcv+0x104/0x1a0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246749]  __netif_receive_skb_core+0x386/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246758]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246766]  netif_receive_skb_internal+0x32/0xa0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246773]  napi_gro_receive+0xe7/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246785]  rtl8169_poll+0x6b9/0x760 [realtek]
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246794]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246802]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246809]  irq_exit+0xb6/0xc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246815]  do_IRQ+0x4f/0xd0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246820]  common_interrupt+0x89/0x89
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246830] RIP: 0010:cpuidle_enter_state+0x12b/0x2b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246833] RSP: 0018:ffffb95540cdfe68 EFLAGS: 00200246 ORIG_RAX: ffffffffffffff9d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246839] RAX: 0000000000000000 RBX: 0000000000000006 RCX: 000000000000001f
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246842] RDX: 0000000000000000 RSI: ffff9a6d92518b58 RDI: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246845] RBP: ffffb95540cdfea0 R08: ffff9a6d925183e4 R09: 0000000000000018
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246848] R10: ffffb95540cdfe38 R11: 0000000000000080 R12: 0000000000000006
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246851] R13: ffff9a6d92522708 R14: ffffffff9bec3598 R15: 0000013b4f4da275
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246853]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246864]  ? cpuidle_enter_state+0x119/0x2b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246874]  cpuidle_enter+0x17/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246880]  call_cpuidle+0x23/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246885]  do_idle+0x17f/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246892]  cpu_startup_entry+0x71/0x80
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246899]  start_secondary+0x151/0x190
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246905]  secondary_startup_64+0x9f/0x9f
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246910] xmit dump stack-------------End
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246913] XMIT SUCCESS
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246930] NAPI RECEIVE SKB -----DONE 
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246932] rtl_rx No Packet
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246937] __netif_receive_skb_core --->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246940]  Interrupt Status : TX
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246948] CPU: 3 PID: 4634 Comm: tcpdump Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246952] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246956] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246959] NAPI Complete work_done :1 budget :64
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246961]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246964] NAPI done
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246974]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246986]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246989] INTERRUPT ENABLED ON HW
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.246999]  ? ttwu_do_wakeup+0x1e/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247007]  ? ttwu_do_activate+0x77/0x80
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247010] NAPI -------------------POLL END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247019]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247027]  process_backlog+0x9f/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247035]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247045]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247052]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247054]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247061]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247067]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247073]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247080]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247084]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247090]  ip_output+0x73/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247097]  ip_local_out+0x35/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247103]  ip_send_skb+0x19/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247106] INTERRUPT:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247116]  udp_send_skb+0x93/0x250
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247118] INTERRUPT DISABLED ON HW
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247121] NAPI INITITING
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247127]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247128] NAPI INITITING DONE
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247131] INTERRUPT ACKNOWLEDGED
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247137]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247144] NAPI POLL START -------------------- budget :64
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247154]  ? __ip_route_output_key_hash+0x3fe/0x900
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247163]  ? ip4_datagram_release_cb+0x69/0x1c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247173]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247174]  Interrupt Status :rtl_rx
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247182]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247184] NAPI RECEIVE SKB -----
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247188] L2 PROTO :0x800
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247195]  SYSC_sendto+0x101/0x190
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247199] L3 VERSION :0x2 ID :9226 PROTO :0xa00
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247204] napi_skb_finish ->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247211]  ? handle_mm_fault+0xf0/0x200
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247220]  ? __do_page_fault+0x265/0x4e0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247224] __netif_receive_skb_core --->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247234]  SyS_sendto+0xe/0x10
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247244]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247250] RIP: 0033:0x7f60de35839d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247254] RSP: 002b:00007ffd4e1aa0f8 EFLAGS: 00000246 ORIG_RAX: 000000000000002c
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247261] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f60de35839d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247264] RDX: 000000000000002c RSI: 00007ffd4e1aa360 RDI: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247267] RBP: 0000000000000005 R08: 0000000000000000 R09: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247270] R10: 0000000000004000 R11: 0000000000000246 R12: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247273] R13: 0000000000000000 R14: 0000000021cf5988 R15: 0000000000000005
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247278] -------------------END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247284] CPU: 2 PID: 0 Comm: swapper/2 Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247288] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247291] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247293] Calling Function Pointer.....
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247298]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247310]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247321]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247331]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247338]  netif_receive_skb_internal+0x32/0xa0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247347]  ? tcp_gro_receive+0x2f0/0x2f0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247355]  napi_gro_receive+0xe7/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247371]  rtl8169_poll+0x6b9/0x760 [realtek]
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247380]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247389]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247396]  irq_exit+0xb6/0xc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247402]  do_IRQ+0x4f/0xd0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247408]  common_interrupt+0x89/0x89
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247420] RIP: 0010:cpuidle_enter_state+0x12b/0x2b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247425] RSP: 0018:ffffb95540cdfe68 EFLAGS: 00200246 ORIG_RAX: ffffffffffffff9d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247431] RAX: 0000000000000000 RBX: 0000000000000004 RCX: 000000000000001f
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247434] RDX: 0000000000000000 RSI: ffff9a6d92518b58 RDI: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247438] RBP: ffffb95540cdfea0 R08: ffff9a6d925183e4 R09: 0000000000000018
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247441] R10: ffffb95540cdfe38 R11: 000000000000018e R12: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247444] R13: ffff9a6d92522708 R14: ffffffff9bec34d8 R15: 0000013b4f69a42f
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247447]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247460]  ? cpuidle_enter_state+0x119/0x2b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247469]  cpuidle_enter+0x17/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247476]  call_cpuidle+0x23/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247481]  do_idle+0x17f/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247488]  cpu_startup_entry+0x71/0x80
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247496]  start_secondary+0x151/0x190
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247503]  secondary_startup_64+0x9f/0x9f
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247511] -------------------END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247515] deliver_skb ->type :[300] enp1s0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247522] Calling Function Pointer.....
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247578] xmit dump stack-------------start
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247581] PACKET: l2->h_proto = 0x800
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247583] L2 PROTO :0x800
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247587] L3 VERSION :0x4 ID :53419 PROTO :0x600
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247595] CPU: 2 PID: 0 Comm: swapper/2 Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247598] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247600] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247604]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247612]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247626]  rtl8169_start_xmit+0xbc/0x800 [realtek]
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247636]  ? dev_queue_xmit_nit+0x203/0x240
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247645]  dev_hard_start_xmit+0x97/0x1f0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247654]  sch_direct_xmit+0xfc/0x1c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247664]  __dev_queue_xmit+0x23c/0x5c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247673]  dev_queue_xmit+0x10/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247679]  ip_finish_output2+0x29d/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247686]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247691]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247700]  ? check_preempt_curr+0x54/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247707]  ip_output+0x73/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247716]  ? ttwu_do_activate+0x77/0x80
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247722]  ip_local_out+0x35/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247729]  ip_queue_xmit+0x157/0x3d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247735]  ? tcp_v4_md5_lookup+0x13/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247742]  tcp_transmit_skb+0x562/0x950
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247748]  tcp_send_ack+0x100/0x180
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247758]  tcp_rcv_state_process+0xd50/0xd70
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247764]  ? dst_alloc+0x4c/0xa0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247772]  tcp_v4_do_rcv+0xac/0x200
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247779]  ? tcp_v4_do_rcv+0xac/0x200
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247786]  tcp_v4_rcv+0x8c6/0x8f0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247795]  ? ip_route_input_noref+0x2ac/0xef0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247802]  ip_local_deliver_finish+0x53/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247808]  ip_local_deliver+0x6f/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247814]  ip_rcv_finish+0x102/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247820]  ip_rcv+0x276/0x380
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247830]  __netif_receive_skb_core+0x386/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247840]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247848]  netif_receive_skb_internal+0x32/0xa0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247856]  ? tcp_gro_receive+0x2f0/0x2f0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247864]  napi_gro_receive+0xe7/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247876]  rtl8169_poll+0x6b9/0x760 [realtek]
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247886]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247895]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247903]  irq_exit+0xb6/0xc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247910]  do_IRQ+0x4f/0xd0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247916]  common_interrupt+0x89/0x89
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247926] RIP: 0010:cpuidle_enter_state+0x12b/0x2b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247930] RSP: 0018:ffffb95540cdfe68 EFLAGS: 00200246 ORIG_RAX: ffffffffffffff9d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247936] RAX: 0000000000000000 RBX: 0000000000000004 RCX: 000000000000001f
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247940] RDX: 0000000000000000 RSI: ffff9a6d92518b58 RDI: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247943] RBP: ffffb95540cdfea0 R08: ffff9a6d925183e4 R09: 0000000000000018
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247947] R10: ffffb95540cdfe38 R11: 000000000000018e R12: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247950] R13: ffff9a6d92522708 R14: ffffffff9bec34d8 R15: 0000013b4f69a42f
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247953]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247966]  ? cpuidle_enter_state+0x119/0x2b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247975]  cpuidle_enter+0x17/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247982]  call_cpuidle+0x23/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247988]  do_idle+0x17f/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.247996]  cpu_startup_entry+0x71/0x80
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248004]  start_secondary+0x151/0x190
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248011]  secondary_startup_64+0x9f/0x9f
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248016] xmit dump stack-------------End
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248019] XMIT SUCCESS
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248027] NAPI RECEIVE SKB -----DONE 
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248030] rtl_rx No Packet
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248033]  Interrupt Status : TX
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248039] NAPI Complete work_done :1 budget :64
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248041] NAPI done
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248044] INTERRUPT ENABLED ON HW
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248046] NAPI -------------------POLL END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248174] __netif_receive_skb_core --->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248180] INTERRUPT:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248184] INTERRUPT DISABLED ON HW
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248186] NAPI INITITING
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248189] NAPI INITITING DONE
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248191] INTERRUPT ACKNOWLEDGED
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248202] CPU: 2 PID: 1018 Comm: dnsmasq Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248206] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248209] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248213]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248223]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248234]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248253]  ? rtl8169_poll+0xa9/0x760 [realtek]
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248264]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248273]  process_backlog+0x9f/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248283]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248294]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248304]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248307]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248316]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248324]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248332]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248341]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248348]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248356]  ip_output+0x73/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248365]  ip_local_out+0x35/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248373]  ip_send_skb+0x19/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248384]  udp_send_skb+0x93/0x250
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248392]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248400]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248413]  ? rw_copy_check_uvector+0x55/0x110
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248425]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248434]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248443]  ___sys_sendmsg+0x2b6/0x2d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248454]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248462]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248473]  ? pick_next_task_fair+0x43a/0x560
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248484]  ? __switch_to+0x23c/0x450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248496]  __sys_sendmsg+0x54/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248505]  ? __sys_sendmsg+0x54/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248517]  SyS_sendmsg+0x12/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248529]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248535] RIP: 0033:0x7fae0b75c450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248541] RSP: 002b:00007ffeb69ce388 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248552] RAX: ffffffffffffffda RBX: 00007ffeb69ce5d0 RCX: 00007fae0b75c450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248557] RDX: 0000000000000000 RSI: 00007ffeb69ce390 RDI: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248562] RBP: 0000000000000004 R08: 00007ffeb69ce5d0 R09: 00007ffeb69ce5b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248567] R10: 0000000000000000 R11: 0000000000000246 R12: 00007ffeb69ce390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248571] R13: 00007ffeb69ce5b0 R14: 0000564e3fb4c280 R15: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248579] -------------------END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248583] Calling Function Pointer.....
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248606] NAPI POLL START -------------------- budget :64
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248611]  Interrupt Status : TX
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248615] NAPI Complete work_done :0 budget :64
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248618] NAPI done
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248621] INTERRUPT ENABLED ON HW
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248623] NAPI -------------------POLL END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248740] __netif_receive_skb_core --->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248751] CPU: 3 PID: 4634 Comm: tcpdump Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248753] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248755] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248760]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248773]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248784]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248794]  ? task_curr+0x30/0x30
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248802]  ? ttwu_do_activate+0x77/0x80
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248810]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248818]  process_backlog+0x9f/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248826]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248835]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248842]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248845]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248852]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248858]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248865]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248871]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248876]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248881]  ip_output+0x73/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248888]  ip_local_out+0x35/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248894]  ip_send_skb+0x19/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248904]  udp_send_skb+0x93/0x250
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248909]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248914]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248926]  ? __ip_route_output_key_hash+0x3fe/0x900
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248934]  ? ip4_datagram_release_cb+0x69/0x1c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248942]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248949]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248955]  SYSC_sendto+0x101/0x190
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248963]  ? SYSC_connect+0xd9/0x110
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248969]  ? sock_alloc_file+0xa6/0x130
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248979]  SyS_sendto+0xe/0x10
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248988]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248994] RIP: 0033:0x7f60de35839d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.248998] RSP: 002b:00007ffd4e1aa0f8 EFLAGS: 00000246 ORIG_RAX: 000000000000002c
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249005] RAX: ffffffffffffffda RBX: 0000000000000001 RCX: 00007f60de35839d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249008] RDX: 000000000000002c RSI: 00007ffd4e1aa360 RDI: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249011] RBP: 00007ffd4e1aa570 R08: 0000000000000000 R09: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249014] R10: 0000000000004000 R11: 0000000000000246 R12: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249017] R13: 0000000000000001 R14: 0000000000000000 R15: 00007f60de618a80
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249022] -------------------END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249025] Calling Function Pointer.....
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249207] __netif_receive_skb_core --->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249228] CPU: 2 PID: 1018 Comm: dnsmasq Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249241] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249252] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249265]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249283]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249300]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249318]  ? update_blocked_averages+0x2ff/0x4b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249336]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249352]  process_backlog+0x9f/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249369]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249388]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249405]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249416]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249432]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249447]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249462]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249477]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249492]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249506]  ip_output+0x73/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249522]  ip_local_out+0x35/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249537]  ip_send_skb+0x19/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249555]  udp_send_skb+0x93/0x250
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249569]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249584]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249603]  ? rw_copy_check_uvector+0x55/0x110
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249621]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249638]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249654]  ___sys_sendmsg+0x2b6/0x2d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249670]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249684]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249702]  ? pick_next_task_fair+0x43a/0x560
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249720]  ? __switch_to+0x23c/0x450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249738]  __sys_sendmsg+0x54/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249754]  ? __sys_sendmsg+0x54/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249770]  SyS_sendmsg+0x12/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249783]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249789] RIP: 0033:0x7fae0b75c450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249793] RSP: 002b:00007ffeb69ce388 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249803] RAX: ffffffffffffffda RBX: 00007ffeb69ce5d0 RCX: 00007fae0b75c450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249808] RDX: 0000000000000000 RSI: 00007ffeb69ce390 RDI: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249812] RBP: 0000000000000004 R08: 00007ffeb69ce5d0 R09: 00007ffeb69ce5b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249817] R10: 0000000000000000 R11: 0000000000000246 R12: 00007ffeb69ce390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249822] R13: 00007ffeb69ce5b0 R14: 0000564e3fb4c280 R15: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249830] -------------------END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.249833] Calling Function Pointer.....
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250142] __netif_receive_skb_core --->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250151] CPU: 2 PID: 4634 Comm: tcpdump Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250155] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250158] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250162]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250173]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250184]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250195]  ? update_blocked_averages+0x2ff/0x4b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250207]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250217]  process_backlog+0x9f/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250228]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250244]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250253]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250257]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250267]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250275]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250282]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250291]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250298]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250306]  ip_output+0x73/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250315]  ip_local_out+0x35/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250323]  ip_send_skb+0x19/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250334]  udp_send_skb+0x93/0x250
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250342]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250354]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250368]  ? __ip_route_output_key_hash+0x3fe/0x900
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250378]  ? ip4_datagram_release_cb+0x69/0x1c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250389]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250399]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250407]  SYSC_sendto+0x101/0x190
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250418]  ? SYSC_connect+0xd9/0x110
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250427]  ? sock_alloc_file+0xa6/0x130
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250443]  SyS_sendto+0xe/0x10
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250455]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250461] RIP: 0033:0x7f60de35839d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250466] RSP: 002b:00007ffd4e1aa0f8 EFLAGS: 00000246 ORIG_RAX: 000000000000002c
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250475] RAX: ffffffffffffffda RBX: 000055bb9cbbddf0 RCX: 00007f60de35839d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250480] RDX: 000000000000002c RSI: 00007ffd4e1aa360 RDI: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250484] RBP: 0000000000000000 R08: 0000000000000000 R09: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250490] R10: 0000000000004000 R11: 0000000000000246 R12: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250494] R13: 0000000000000000 R14: 0000000000000400 R15: 000055bb9cbbddf0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250505] -------------------END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250509] Calling Function Pointer.....
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250606] __netif_receive_skb_core --->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250615] CPU: 2 PID: 1018 Comm: dnsmasq Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250619] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250622] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250626]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250635]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250646]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250657]  ? update_blocked_averages+0x2ff/0x4b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250672]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250682]  process_backlog+0x9f/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250692]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250703]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250712]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250716]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250725]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250733]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250741]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250752]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250759]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250768]  ip_output+0x73/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250777]  ip_local_out+0x35/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250785]  ip_send_skb+0x19/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250796]  udp_send_skb+0x93/0x250
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250803]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250811]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250827]  ? rw_copy_check_uvector+0x55/0x110
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250838]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250848]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250857]  ___sys_sendmsg+0x2b6/0x2d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250866]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250874]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250885]  ? pick_next_task_fair+0x43a/0x560
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250896]  ? __switch_to+0x23c/0x450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250911]  __sys_sendmsg+0x54/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250920]  ? __sys_sendmsg+0x54/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250931]  SyS_sendmsg+0x12/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250943]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250948] RIP: 0033:0x7fae0b75c450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250953] RSP: 002b:00007ffeb69ce388 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250961] RAX: ffffffffffffffda RBX: 00007ffeb69ce5d0 RCX: 00007fae0b75c450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250965] RDX: 0000000000000000 RSI: 00007ffeb69ce390 RDI: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250971] RBP: 0000000000000004 R08: 00007ffeb69ce5d0 R09: 00007ffeb69ce5b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250978] R10: 0000000000000000 R11: 0000000000000246 R12: 00007ffeb69ce390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250983] R13: 00007ffeb69ce5b0 R14: 0000564e3fb4c280 R15: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250989] -------------------END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.250992] Calling Function Pointer.....
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251089] __netif_receive_skb_core --->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251108] CPU: 2 PID: 4634 Comm: tcpdump Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251126] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251142] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251157]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251178]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251203]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251225]  ? update_blocked_averages+0x2ff/0x4b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251247]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251268]  process_backlog+0x9f/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251291]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251312]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251327]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251346]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251366]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251382]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251402]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251426]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251441]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251461]  ip_output+0x73/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251485]  ip_local_out+0x35/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251490]  ip_send_skb+0x19/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251496]  udp_send_skb+0x93/0x250
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251500]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251506]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251512]  ? __ip_route_output_key_hash+0x3fe/0x900
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251517]  ? ip4_datagram_release_cb+0x69/0x1c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251523]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251528]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251533]  SYSC_sendto+0x101/0x190
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251539]  ? SYSC_connect+0xd9/0x110
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251544]  ? sock_alloc_file+0xa6/0x130
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251549]  SyS_sendto+0xe/0x10
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251556]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251561] RIP: 0033:0x7f60de35839d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251564] RSP: 002b:00007ffd4e1aa0f8 EFLAGS: 00000246 ORIG_RAX: 000000000000002c
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251574] RAX: ffffffffffffffda RBX: 0000000000000001 RCX: 00007f60de35839d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251577] RDX: 000000000000002c RSI: 00007ffd4e1aa360 RDI: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251580] RBP: 00007ffd4e1aa570 R08: 0000000000000000 R09: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251584] R10: 0000000000004000 R11: 0000000000000246 R12: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251588] R13: 0000000000000001 R14: 0000000000000000 R15: 00007f60de618a80
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251593] -------------------END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251597] Calling Function Pointer.....
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251618] __netif_receive_skb_core --->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251623] CPU: 2 PID: 1018 Comm: dnsmasq Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251628] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251632] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251634]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251636]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251639]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251641]  ? update_blocked_averages+0x2ff/0x4b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251645]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251648]  process_backlog+0x9f/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251650]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251653]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251655]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251656]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251658]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251660]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251662]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251664]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251667]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251669]  ip_output+0x73/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251671]  ip_local_out+0x35/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251673]  ip_send_skb+0x19/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251676]  udp_send_skb+0x93/0x250
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251678]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251680]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251683]  ? rw_copy_check_uvector+0x55/0x110
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251686]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251689]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251691]  ___sys_sendmsg+0x2b6/0x2d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251693]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251695]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251698]  ? pick_next_task_fair+0x43a/0x560
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251700]  ? __switch_to+0x23c/0x450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251703]  __sys_sendmsg+0x54/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251706]  ? __sys_sendmsg+0x54/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251709]  SyS_sendmsg+0x12/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251712]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251713] RIP: 0033:0x7fae0b75c450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251714] RSP: 002b:00007ffeb69ce388 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251717] RAX: ffffffffffffffda RBX: 00007ffeb69ce5d0 RCX: 00007fae0b75c450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251718] RDX: 0000000000000000 RSI: 00007ffeb69ce390 RDI: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251719] RBP: 0000000000000004 R08: 00007ffeb69ce5d0 R09: 00007ffeb69ce5b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251720] R10: 0000000000000000 R11: 0000000000000246 R12: 00007ffeb69ce390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251721] R13: 00007ffeb69ce5b0 R14: 0000564e3fb4c280 R15: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251723] -------------------END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.251724] Calling Function Pointer.....
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605050] xmit dump stack-------------start
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605059] PACKET: l2->h_proto = 0x86dd
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605060] L2 PROTO :0x86dd
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605063] L3 VERSION :0x6 ID :16 PROTO :0x8000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605066] CPU: 2 PID: 0 Comm: swapper/2 Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605067] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605068] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605070]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605078]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605087]  rtl8169_start_xmit+0xbc/0x800 [realtek]
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605091]  ? dev_queue_xmit_nit+0x203/0x240
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605096]  dev_hard_start_xmit+0x97/0x1f0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605113]  sch_direct_xmit+0xfc/0x1c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605115]  __dev_queue_xmit+0x23c/0x5c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605117]  dev_queue_xmit+0x10/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605120]  ip6_finish_output2+0x32f/0x510
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605122]  ? pcpu_alloc_area+0x211/0x3d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605124]  ip6_finish_output+0xa0/0x100
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605126]  ? ip6_finish_output+0xa0/0x100
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605128]  ip6_output+0x5b/0x100
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605131]  ? mod_timer+0x1a2/0x2f0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605134]  NF_HOOK.constprop.23+0x3f/0xb0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605136]  ? fib6_force_start_gc+0x31/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605137]  ? icmp6_dst_alloc+0x100/0x160
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605139]  ndisc_send_skb+0x1a1/0x2c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605142]  ndisc_send_rs+0x5b/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605144]  addrconf_rs_timer+0x124/0x1f0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605146]  ? ipv6_get_lladdr+0xb0/0xb0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605148]  call_timer_fn+0x35/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605151]  ? call_timer_fn+0x35/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605153]  run_timer_softirq+0x1e8/0x450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605155]  ? ktime_get+0x3c/0xa0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605157]  ? lapic_next_deadline+0x26/0x30
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605161]  ? clockevents_program_event+0x7d/0xf0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605166]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605170]  irq_exit+0xb6/0xc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605173]  smp_apic_timer_interrupt+0x3d/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605178]  apic_timer_interrupt+0x89/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605184] RIP: 0010:cpuidle_enter_state+0x12b/0x2b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605187] RSP: 0018:ffffb95540cdfe68 EFLAGS: 00200246 ORIG_RAX: ffffffffffffff10
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605194] RAX: 0000000000000000 RBX: 0000000000000008 RCX: 000000000000001f
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605196] RDX: 0000000000000000 RSI: ffff9a6d92518b58 RDI: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605198] RBP: ffffb95540cdfea0 R08: ffff9a6d925183e4 R09: 0000000000000018
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605201] R10: ffffb95540cdfe38 R11: 0000000000000ecf R12: 0000000000000008
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605203] R13: ffff9a6d92522708 R14: ffffffff9bec3658 R15: 0000013b60f55231
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605204]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605207]  ? cpuidle_enter_state+0x119/0x2b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605209]  cpuidle_enter+0x17/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605212]  call_cpuidle+0x23/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605214]  do_idle+0x17f/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605215]  cpu_startup_entry+0x71/0x80
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605217]  start_secondary+0x151/0x190
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605219]  secondary_startup_64+0x9f/0x9f
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605222] xmit dump stack-------------End
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605225] XMIT SUCCESS
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605331] __netif_receive_skb_core --->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605333] CPU: 2 PID: 4634 Comm: tcpdump Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605334] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605335] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605336]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605339]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605342]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605344]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605346]  process_backlog+0x9f/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605348]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605351]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605353]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605354]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605356]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605358]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605360]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605361]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605363]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605365]  ip_output+0x73/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605367]  ip_local_out+0x35/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605368]  ip_send_skb+0x19/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605371]  udp_send_skb+0x93/0x250
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605372]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605374]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605377]  ? __ip_route_output_key_hash+0x3fe/0x900
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605379]  ? ip4_datagram_release_cb+0x69/0x1c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605381]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605384]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605385]  SYSC_sendto+0x101/0x190
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605387]  ? SYSC_connect+0xd9/0x110
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605389]  ? sock_alloc_file+0xa6/0x130
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605391]  SyS_sendto+0xe/0x10
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605394]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605395] RIP: 0033:0x7f60de35839d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605397] RSP: 002b:00007ffd4e1aa088 EFLAGS: 00000246 ORIG_RAX: 000000000000002c
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605399] RAX: ffffffffffffffda RBX: 000055bb9cbbe710 RCX: 00007f60de35839d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605400] RDX: 000000000000005a RSI: 00007ffd4e1aa2f0 RDI: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605401] RBP: 0000000000000000 R08: 0000000000000000 R09: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605402] R10: 0000000000004000 R11: 0000000000000246 R12: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605402] R13: 0000000000000008 R14: 0000000000000400 R15: 000055bb9cbbe710
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605406] INTERRUPT:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605408] INTERRUPT DISABLED ON HW
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605409] NAPI INITITING
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605410] NAPI INITITING DONE
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605410] INTERRUPT ACKNOWLEDGED
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605411] -------------------END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605412] Calling Function Pointer.....
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605420] NAPI POLL START -------------------- budget :64
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605422]  Interrupt Status : TX
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605424] NAPI Complete work_done :0 budget :64
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605425] NAPI done
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605425] INTERRUPT ENABLED ON HW
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605426] NAPI -------------------POLL END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605495] __netif_receive_skb_core --->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605497] CPU: 2 PID: 1018 Comm: dnsmasq Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605498] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605499] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605499]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605501]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605504]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605507]  ? printk+0x52/0x6e
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605508]  ? kfree_skbmem+0x56/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605510]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605513]  process_backlog+0x9f/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605514]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605517]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605518]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605519]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605521]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605523]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605524]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605526]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605527]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605528]  ip_output+0x73/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605531]  ip_local_out+0x35/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605532]  ip_send_skb+0x19/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605534]  udp_send_skb+0x93/0x250
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605536]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605537]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605540]  ? rw_copy_check_uvector+0x55/0x110
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605542]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605544]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605546]  ___sys_sendmsg+0x2b6/0x2d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605548]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605550]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605552]  ? pick_next_task_fair+0x43a/0x560
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605555]  ? __switch_to+0x23c/0x450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605557]  __sys_sendmsg+0x54/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605559]  ? __sys_sendmsg+0x54/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605561]  SyS_sendmsg+0x12/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605564]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605565] RIP: 0033:0x7fae0b75c450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605566] RSP: 002b:00007ffeb69ce388 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605568] RAX: ffffffffffffffda RBX: 00007ffeb69ce5d0 RCX: 00007fae0b75c450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605569] RDX: 0000000000000000 RSI: 00007ffeb69ce390 RDI: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605570] RBP: 0000000000000004 R08: 00007ffeb69ce5d0 R09: 00007ffeb69ce5b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605571] R10: 0000000000000000 R11: 0000000000000246 R12: 00007ffeb69ce390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605572] R13: 00007ffeb69ce5b0 R14: 0000564e3fb4c280 R15: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605573] -------------------END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605574] Calling Function Pointer.....
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605609] __netif_receive_skb_core --->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605612] CPU: 3 PID: 4634 Comm: tcpdump Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605612] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605613] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605614]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605617]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605619]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605622]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605623]  process_backlog+0x9f/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605625]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605628]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605630]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605631]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605633]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605634]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605636]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605637]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605639]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605640]  ip_output+0x73/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605642]  ip_local_out+0x35/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605644]  ip_send_skb+0x19/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605646]  udp_send_skb+0x93/0x250
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605648]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605649]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605652]  ? __ip_route_output_key_hash+0x3fe/0x900
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605653]  ? ip4_datagram_release_cb+0x69/0x1c0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605655]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605658]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605659]  SYSC_sendto+0x101/0x190
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605661]  ? SYSC_connect+0xd9/0x110
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605663]  ? sock_alloc_file+0xa6/0x130
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605665]  SyS_sendto+0xe/0x10
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605667]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605669] RIP: 0033:0x7f60de35839d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605670] RSP: 002b:00007ffd4e1aa088 EFLAGS: 00000246 ORIG_RAX: 000000000000002c
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605672] RAX: ffffffffffffffda RBX: 0000000000000001 RCX: 00007f60de35839d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605673] RDX: 000000000000005a RSI: 00007ffd4e1aa2f0 RDI: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605674] RBP: 00007ffd4e1aa500 R08: 0000000000000000 R09: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605674] R10: 0000000000004000 R11: 0000000000000246 R12: 0000000000000000
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605675] R13: 0000000000000001 R14: 0000000000000000 R15: 00007f60de618a80
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605676] -------------------END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605677] Calling Function Pointer.....
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605701] __netif_receive_skb_core --->
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605702] CPU: 2 PID: 1018 Comm: dnsmasq Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605703] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605704] Call Trace:
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605705]  <IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605707]  dump_stack+0x63/0x82
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605709]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605711]  ? panic+0x1ec/0x22d
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605713]  ? kfree_skbmem+0x56/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605715]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605717]  process_backlog+0x9f/0x140
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605719]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605721]  __do_softirq+0xed/0x278
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605723]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605724]  </IRQ>
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605725]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605727]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605728]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605730]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605731]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605733]  ip_output+0x73/0xe0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605735]  ip_local_out+0x35/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605736]  ip_send_skb+0x19/0x40
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605738]  udp_send_skb+0x93/0x250
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605740]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605742]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605744]  ? rw_copy_check_uvector+0x55/0x110
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605746]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605748]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605750]  ___sys_sendmsg+0x2b6/0x2d0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605752]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605753]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605755]  ? pick_next_task_fair+0x43a/0x560
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605757]  ? __switch_to+0x23c/0x450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605760]  __sys_sendmsg+0x54/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605761]  ? __sys_sendmsg+0x54/0x90
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605764]  SyS_sendmsg+0x12/0x20
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605766]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605767] RIP: 0033:0x7fae0b75c450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605768] RSP: 002b:00007ffeb69ce388 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605770] RAX: ffffffffffffffda RBX: 00007ffeb69ce5d0 RCX: 00007fae0b75c450
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605771] RDX: 0000000000000000 RSI: 00007ffeb69ce390 RDI: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605771] RBP: 0000000000000004 R08: 00007ffeb69ce5d0 R09: 00007ffeb69ce5b0
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605772] R10: 0000000000000000 R11: 0000000000000246 R12: 00007ffeb69ce390
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605773] R13: 00007ffeb69ce5b0 R14: 0000564e3fb4c280 R15: 0000000000000004
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605774] -------------------END
+Aug 20 11:12:34 vkalyanam-Lenovo-B41-80 kernel: [ 1354.605775] Calling Function Pointer.....
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255171] INTERRUPT:
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255174] INTERRUPT DISABLED ON HW
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255174] NAPI INITITING
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255175] NAPI INITITING DONE
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255175] INTERRUPT ACKNOWLEDGED
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255183] NAPI POLL START -------------------- budget :64
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255186]  Interrupt Status :rtl_rx
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255189] NAPI RECEIVE SKB -----
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255191] L2 PROTO :0x806
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255209] L3 VERSION :0x2 ID :9226 PROTO :0xa00
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255211] napi_skb_finish ->
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255213] __netif_receive_skb_core --->
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255216] CPU: 2 PID: 0 Comm: swapper/2 Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255217] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255218] Call Trace:
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255221]  <IRQ>
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255227]  dump_stack+0x63/0x82
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255232]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255234]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255236]  netif_receive_skb_internal+0x32/0xa0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255238]  napi_gro_receive+0xe7/0x140
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255245]  rtl8169_poll+0x6b9/0x760 [realtek]
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255247]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255250]  __do_softirq+0xed/0x278
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255253]  irq_exit+0xb6/0xc0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255254]  do_IRQ+0x4f/0xd0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255256]  common_interrupt+0x89/0x89
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255260] RIP: 0010:cpuidle_enter_state+0x12b/0x2b0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255274] RSP: 0018:ffffb95540cdfe68 EFLAGS: 00200246 ORIG_RAX: ffffffffffffff9d
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255276] RAX: 0000000000000000 RBX: 0000000000000008 RCX: 000000000000001f
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255277] RDX: 0000000000000000 RSI: ffff9a6d92518b58 RDI: 0000000000000000
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255278] RBP: ffffb95540cdfea0 R08: ffff9a6d925183e4 R09: 0000000000000018
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255280] R10: ffffb95540cdfe38 R11: 0000000000000ecf R12: 0000000000000008
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255281] R13: ffff9a6d92522708 R14: ffffffff9bec3658 R15: 0000013c79c62d52
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255282]  </IRQ>
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255285]  ? cpuidle_enter_state+0x119/0x2b0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255287]  cpuidle_enter+0x17/0x20
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255290]  call_cpuidle+0x23/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255291]  do_idle+0x17f/0x1d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255293]  cpu_startup_entry+0x71/0x80
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255296]  start_secondary+0x151/0x190
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255298]  secondary_startup_64+0x9f/0x9f
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255300] -------------------END
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255303] deliver_skb ->type :[300] enp1s0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255310] Calling Function Pointer.....
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255321] xmit dump stack-------------start
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255323] PACKET: l2->h_proto = 0x806
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255324] L2 PROTO :0x806
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255326] L3 VERSION :0x0 ID :1540 PROTO :0x3900
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255328] CPU: 2 PID: 0 Comm: swapper/2 Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255329] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255330] Call Trace:
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255331]  <IRQ>
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255333]  dump_stack+0x63/0x82
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255336]  rtl8169_start_xmit+0xbc/0x800 [realtek]
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255339]  ? dev_queue_xmit_nit+0x203/0x240
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255341]  dev_hard_start_xmit+0x97/0x1f0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255344]  sch_direct_xmit+0xfc/0x1c0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255346]  __dev_queue_xmit+0x23c/0x5c0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255349]  dev_queue_xmit+0x10/0x20
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255351]  arp_xmit+0x38/0xa0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255352]  arp_send_dst.part.18+0x38/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255354]  arp_process+0x6a3/0x6d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255357]  arp_rcv+0x104/0x1a0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255359]  __netif_receive_skb_core+0x386/0xbc0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255361]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255363]  netif_receive_skb_internal+0x32/0xa0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255365]  napi_gro_receive+0xe7/0x140
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255368]  rtl8169_poll+0x6b9/0x760 [realtek]
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255370]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255373]  __do_softirq+0xed/0x278
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255375]  irq_exit+0xb6/0xc0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255376]  do_IRQ+0x4f/0xd0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255378]  common_interrupt+0x89/0x89
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255381] RIP: 0010:cpuidle_enter_state+0x12b/0x2b0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255382] RSP: 0018:ffffb95540cdfe68 EFLAGS: 00200246 ORIG_RAX: ffffffffffffff9d
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255384] RAX: 0000000000000000 RBX: 0000000000000008 RCX: 000000000000001f
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255385] RDX: 0000000000000000 RSI: ffff9a6d92518b58 RDI: 0000000000000000
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255386] RBP: ffffb95540cdfea0 R08: ffff9a6d925183e4 R09: 0000000000000018
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255387] R10: ffffb95540cdfe38 R11: 0000000000000ecf R12: 0000000000000008
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255388] R13: ffff9a6d92522708 R14: ffffffff9bec3658 R15: 0000013c79c62d52
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255389]  </IRQ>
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255392]  ? cpuidle_enter_state+0x119/0x2b0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255394]  cpuidle_enter+0x17/0x20
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255396]  call_cpuidle+0x23/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255398]  do_idle+0x17f/0x1d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255399]  cpu_startup_entry+0x71/0x80
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255401]  start_secondary+0x151/0x190
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255403]  secondary_startup_64+0x9f/0x9f
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255405] xmit dump stack-------------End
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255407] XMIT SUCCESS
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255409] NAPI RECEIVE SKB -----DONE 
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255411] rtl_rx No Packet
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255413] NAPI Complete work_done :1 budget :64
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255414] NAPI done
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255415] INTERRUPT ENABLED ON HW
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255416] NAPI -------------------POLL END
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255546] INTERRUPT:
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255548] INTERRUPT DISABLED ON HW
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255548] NAPI INITITING
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255549] NAPI INITITING DONE
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255549] INTERRUPT ACKNOWLEDGED
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255550] NAPI POLL START -------------------- budget :64
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255552]  Interrupt Status : TX
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255554] NAPI Complete work_done :0 budget :64
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255554] NAPI done
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255555] INTERRUPT ENABLED ON HW
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.255556] NAPI -------------------POLL END
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301576] __netif_receive_skb_core --->
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301580] CPU: 2 PID: 714 Comm: avahi-daemon Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301581] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301582] Call Trace:
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301583]  <IRQ>
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301589]  dump_stack+0x63/0x82
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301593]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301595]  ? ttwu_do_wakeup+0x1e/0x140
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301597]  ? ttwu_do_activate+0x77/0x80
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301600]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301601]  process_backlog+0x9f/0x140
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301604]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301606]  __do_softirq+0xed/0x278
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301608]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301609]  </IRQ>
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301611]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301613]  do_softirq+0x1d/0x20
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301614]  netif_rx_ni+0x33/0x80
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301616]  dev_loopback_xmit+0x7b/0x90
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301618]  ip_mc_output+0x147/0x270
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301619]  ? __ip_local_out+0x49/0x140
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301621]  ip_local_out+0x35/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301623]  ip_send_skb+0x19/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301625]  udp_send_skb+0x169/0x250
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301627]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301629]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301631]  ? rw_copy_check_uvector+0x55/0x110
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301634]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301636]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301638]  ___sys_sendmsg+0x2b6/0x2d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301640]  ? current_time+0x38/0x70
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301642]  ? file_update_time+0x60/0x110
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301644]  ? pipe_write+0x2ad/0x400
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301646]  __sys_sendmsg+0x54/0x90
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301648]  ? __sys_sendmsg+0x54/0x90
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301650]  SyS_sendmsg+0x12/0x20
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301656]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301658] RIP: 0033:0x7f3a0c3eaa50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301659] RSP: 002b:00007fff2f270b88 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301661] RAX: ffffffffffffffda RBX: 00007fff2f270710 RCX: 00007f3a0c3eaa50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301662] RDX: 0000000000000000 RSI: 00007fff2f270c40 RDI: 000000000000000c
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301663] RBP: 00007fff2f270b60 R08: 00007fff2f270bb3 R09: 000000000000007d
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301664] R10: 0000000000000004 R11: 0000000000000246 R12: 000000000000000c
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301665] R13: 0000000000000001 R14: 0000000000e87da0 R15: 0000000000000006
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301666] -------------------END
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301668] deliver_skb ->type :[300] enp1s0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301669] Calling Function Pointer.....
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301686] xmit dump stack-------------start
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301687] PACKET: l2->h_proto = 0x800
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301688] L2 PROTO :0x800
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301689] L3 VERSION :0x4 ID :38328 PROTO :0x1100
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301691] CPU: 2 PID: 714 Comm: avahi-daemon Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301692] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301692] Call Trace:
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301694]  dump_stack+0x63/0x82
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301701]  rtl8169_start_xmit+0xbc/0x800 [realtek]
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301703]  ? dev_queue_xmit_nit+0x203/0x240
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301705]  dev_hard_start_xmit+0x97/0x1f0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301708]  sch_direct_xmit+0xfc/0x1c0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301710]  __dev_queue_xmit+0x23c/0x5c0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301712]  dev_queue_xmit+0x10/0x20
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301714]  ip_finish_output2+0x29d/0x390
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301716]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301717]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301719]  ? netif_rx_ni+0x33/0x80
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301720]  ip_mc_output+0x91/0x270
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301722]  ? __ip_local_out+0x49/0x140
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301723]  ip_local_out+0x35/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301725]  ip_send_skb+0x19/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301727]  udp_send_skb+0x169/0x250
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301728]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301730]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301732]  ? rw_copy_check_uvector+0x55/0x110
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301735]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301736]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301738]  ___sys_sendmsg+0x2b6/0x2d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301740]  ? current_time+0x38/0x70
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301742]  ? file_update_time+0x60/0x110
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301744]  ? pipe_write+0x2ad/0x400
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301746]  __sys_sendmsg+0x54/0x90
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301748]  ? __sys_sendmsg+0x54/0x90
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301750]  SyS_sendmsg+0x12/0x20
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301752]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301753] RIP: 0033:0x7f3a0c3eaa50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301754] RSP: 002b:00007fff2f270b88 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301756] RAX: ffffffffffffffda RBX: 00007fff2f270710 RCX: 00007f3a0c3eaa50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301757] RDX: 0000000000000000 RSI: 00007fff2f270c40 RDI: 000000000000000c
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301758] RBP: 00007fff2f270b60 R08: 00007fff2f270bb3 R09: 000000000000007d
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301759] R10: 0000000000000004 R11: 0000000000000246 R12: 000000000000000c
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301760] R13: 0000000000000001 R14: 0000000000e87da0 R15: 0000000000000006
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301761] xmit dump stack-------------End
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301763] XMIT SUCCESS
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301771] __netif_receive_skb_core --->
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301773] CPU: 3 PID: 4634 Comm: tcpdump Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301774] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301774] Call Trace:
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301775]  <IRQ>
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301777]  dump_stack+0x63/0x82
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301780]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301782]  ? update_blocked_averages+0x2ff/0x4b0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301783]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301785]  process_backlog+0x9f/0x140
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301786]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301788]  __do_softirq+0xed/0x278
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301789]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301790]  </IRQ>
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301791]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301792]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301794]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301795]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301796]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301797]  ip_output+0x73/0xe0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301798]  ip_local_out+0x35/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301799]  ip_send_skb+0x19/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301801]  udp_send_skb+0x93/0x250
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301802]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301803]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301805]  ? __ip_route_output_key_hash+0x3fe/0x900
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301807]  ? ip4_datagram_release_cb+0x69/0x1c0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301808]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301810]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301811]  SYSC_sendto+0x101/0x190
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301812]  ? SYSC_connect+0xd9/0x110
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301814]  ? sock_alloc_file+0xa6/0x130
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301815]  SyS_sendto+0xe/0x10
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301817]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301818] RIP: 0033:0x7f60de35839d
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301819] RSP: 002b:00007ffd4e1a9f78 EFLAGS: 00000246 ORIG_RAX: 000000000000002c
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301820] RAX: ffffffffffffffda RBX: 000055bb9cbbe7a0 RCX: 00007f60de35839d
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301821] RDX: 000000000000002a RSI: 00007ffd4e1aa1e0 RDI: 0000000000000004
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301821] RBP: 0000000000000000 R08: 0000000000000000 R09: 0000000000000000
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301822] R10: 0000000000004000 R11: 0000000000000246 R12: 0000000000000000
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301822] R13: 0000000000000000 R14: 0000000000000400 R15: 000055bb9cbbe7a0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301823] -------------------END
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301824] Calling Function Pointer.....
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301862] __netif_receive_skb_core --->
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301864] CPU: 2 PID: 1018 Comm: dnsmasq Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301865] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301866] Call Trace:
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301867]  <IRQ>
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301869]  dump_stack+0x63/0x82
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301871]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301873]  ? task_curr+0x30/0x30
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301875]  ? ttwu_do_activate+0x77/0x80
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301877]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301878]  process_backlog+0x9f/0x140
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301880]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301882]  __do_softirq+0xed/0x278
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301884]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301885]  </IRQ>
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301887]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301888]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301890]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301891]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301892]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301894]  ip_output+0x73/0xe0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301896]  ip_local_out+0x35/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301897]  ip_send_skb+0x19/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301899]  udp_send_skb+0x93/0x250
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301901]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301902]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301905]  ? rw_copy_check_uvector+0x55/0x110
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301907]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301908]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301910]  ___sys_sendmsg+0x2b6/0x2d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301912]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301914]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301916]  ? pick_next_task_fair+0x43a/0x560
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301919]  ? __switch_to+0x23c/0x450
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301921]  __sys_sendmsg+0x54/0x90
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301922]  ? __sys_sendmsg+0x54/0x90
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301924]  SyS_sendmsg+0x12/0x20
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301927]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301928] RIP: 0033:0x7fae0b75c450
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301929] RSP: 002b:00007ffeb69ce388 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301930] RAX: ffffffffffffffda RBX: 00007ffeb69ce5d0 RCX: 00007fae0b75c450
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301931] RDX: 0000000000000000 RSI: 00007ffeb69ce390 RDI: 0000000000000004
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301932] RBP: 0000000000000004 R08: 00007ffeb69ce5d0 R09: 00007ffeb69ce5b0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301933] R10: 0000000000000000 R11: 0000000000000246 R12: 00007ffeb69ce390
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301934] R13: 00007ffeb69ce5b0 R14: 0000564e3fb4c280 R15: 0000000000000004
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301938] INTERRUPT:
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301940] INTERRUPT DISABLED ON HW
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301940] NAPI INITITING
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301941] NAPI INITITING DONE
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301941] INTERRUPT ACKNOWLEDGED
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301942] -------------------END
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301943] Calling Function Pointer.....
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301947] NAPI POLL START -------------------- budget :64
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301949]  Interrupt Status : TX
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301951] NAPI Complete work_done :0 budget :64
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301951] NAPI done
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301952] INTERRUPT ENABLED ON HW
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301952] NAPI -------------------POLL END
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301964] __netif_receive_skb_core --->
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301965] CPU: 3 PID: 4634 Comm: tcpdump Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301966] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301966] Call Trace:
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301967]  <IRQ>
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301968]  dump_stack+0x63/0x82
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301970]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301972]  ? update_blocked_averages+0x2ff/0x4b0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301973]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301975]  process_backlog+0x9f/0x140
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301976]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301978]  __do_softirq+0xed/0x278
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301979]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301979]  </IRQ>
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301980]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301981]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301982]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301984]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301984]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301986]  ip_output+0x73/0xe0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301987]  ip_local_out+0x35/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301988]  ip_send_skb+0x19/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301989]  udp_send_skb+0x93/0x250
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301990]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301991]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301993]  ? __ip_route_output_key_hash+0x3fe/0x900
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301995]  ? ip4_datagram_release_cb+0x69/0x1c0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301997]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301998]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.301999]  SYSC_sendto+0x101/0x190
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302000]  ? SYSC_connect+0xd9/0x110
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302001]  ? sock_alloc_file+0xa6/0x130
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302003]  SyS_sendto+0xe/0x10
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302005]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302006] RIP: 0033:0x7f60de35839d
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302006] RSP: 002b:00007ffd4e1a9f78 EFLAGS: 00000246 ORIG_RAX: 000000000000002c
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302007] RAX: ffffffffffffffda RBX: 0000000000000001 RCX: 00007f60de35839d
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302008] RDX: 000000000000002a RSI: 00007ffd4e1aa1e0 RDI: 0000000000000004
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302008] RBP: 00007ffd4e1aa3f0 R08: 0000000000000000 R09: 0000000000000000
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302009] R10: 0000000000004000 R11: 0000000000000246 R12: 0000000000000000
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302009] R13: 0000000000000001 R14: 0000000000000000 R15: 00007f60de618a80
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302010] -------------------END
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302011] Calling Function Pointer.....
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302025] __netif_receive_skb_core --->
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302026] CPU: 2 PID: 1018 Comm: dnsmasq Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302027] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302027] Call Trace:
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302028]  <IRQ>
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302030]  dump_stack+0x63/0x82
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302032]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302035]  ? printk+0x52/0x6e
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302036]  ? kfree_skbmem+0x56/0x60
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302038]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302040]  process_backlog+0x9f/0x140
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302042]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302044]  __do_softirq+0xed/0x278
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302046]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302047]  </IRQ>
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302048]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302050]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302051]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302053]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302054]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302055]  ip_output+0x73/0xe0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302057]  ip_local_out+0x35/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302058]  ip_send_skb+0x19/0x40
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302060]  udp_send_skb+0x93/0x250
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302062]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302063]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302066]  ? rw_copy_check_uvector+0x55/0x110
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302068]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302069]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302071]  ___sys_sendmsg+0x2b6/0x2d0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302073]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302074]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302076]  ? pick_next_task_fair+0x43a/0x560
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302078]  ? __switch_to+0x23c/0x450
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302080]  __sys_sendmsg+0x54/0x90
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302082]  ? __sys_sendmsg+0x54/0x90
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302084]  SyS_sendmsg+0x12/0x20
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302086]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302087] RIP: 0033:0x7fae0b75c450
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302088] RSP: 002b:00007ffeb69ce388 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302089] RAX: ffffffffffffffda RBX: 00007ffeb69ce5d0 RCX: 00007fae0b75c450
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302090] RDX: 0000000000000000 RSI: 00007ffeb69ce390 RDI: 0000000000000004
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302091] RBP: 0000000000000004 R08: 00007ffeb69ce5d0 R09: 00007ffeb69ce5b0
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302092] R10: 0000000000000000 R11: 0000000000000246 R12: 00007ffeb69ce390
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302093] R13: 00007ffeb69ce5b0 R14: 0000564e3fb4c280 R15: 0000000000000004
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302094] -------------------END
+Aug 20 11:12:39 vkalyanam-Lenovo-B41-80 kernel: [ 1359.302095] Calling Function Pointer.....
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979465] __netif_receive_skb_core --->
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979469] CPU: 2 PID: 714 Comm: avahi-daemon Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979470] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979471] Call Trace:
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979473]  <IRQ>
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979479]  dump_stack+0x63/0x82
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979482]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979485]  ? ttwu_do_wakeup+0x1e/0x140
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979487]  ? ttwu_do_activate+0x77/0x80
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979489]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979491]  process_backlog+0x9f/0x140
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979492]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979495]  __do_softirq+0xed/0x278
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979497]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979498]  </IRQ>
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979500]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979501]  do_softirq+0x1d/0x20
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979503]  netif_rx_ni+0x33/0x80
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979505]  dev_loopback_xmit+0x7b/0x90
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979507]  ip6_finish_output2+0x41e/0x510
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979509]  ip6_finish_output+0xa0/0x100
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979511]  ? ip6_finish_output+0xa0/0x100
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979513]  ip6_output+0x5b/0x100
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979515]  ip6_local_out+0x35/0x40
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979517]  ip6_send_skb+0x23/0x70
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979519]  udp_v6_send_skb+0x146/0x310
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979521]  udpv6_sendmsg+0x995/0xc70
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979523]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979525]  ? consume_skb+0x34/0x90
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979528]  ? _copy_from_user+0x36/0x70
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979530]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979532]  ? inet_sendmsg+0x31/0xb0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979534]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979535]  ___sys_sendmsg+0x2b6/0x2d0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979538]  ? current_time+0x38/0x70
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979540]  ? file_update_time+0x60/0x110
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979542]  __sys_sendmsg+0x54/0x90
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979544]  ? __sys_sendmsg+0x54/0x90
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979546]  SyS_sendmsg+0x12/0x20
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979548]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979550] RIP: 0033:0x7f3a0c3eaa50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979551] RSP: 002b:00007fff2f270b78 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979553] RAX: ffffffffffffffda RBX: 00007fff2f270710 RCX: 00007f3a0c3eaa50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979554] RDX: 0000000000000000 RSI: 00007fff2f270c30 RDI: 000000000000000d
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979555] RBP: 00007fff2f270b60 R08: 0000000000000000 R09: 0000000000000000
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979556] R10: 00000000000729aa R11: 0000000000000246 R12: 000000000000000c
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979557] R13: 0000000000000001 R14: 0000000000e87da0 R15: 0000000000000006
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979558] -------------------END
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979560] deliver_skb ->type :[300] enp1s0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979561] Calling Function Pointer.....
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979575] xmit dump stack-------------start
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979576] PACKET: l2->h_proto = 0x86dd
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979577] L2 PROTO :0x86dd
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979595] L3 VERSION :0x6 ID :53 PROTO :0x8000
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979597] CPU: 2 PID: 714 Comm: avahi-daemon Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979597] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979598] Call Trace:
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979600]  dump_stack+0x63/0x82
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979606]  rtl8169_start_xmit+0xbc/0x800 [realtek]
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979608]  ? dev_queue_xmit_nit+0x203/0x240
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979610]  dev_hard_start_xmit+0x97/0x1f0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979613]  sch_direct_xmit+0xfc/0x1c0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979615]  __dev_queue_xmit+0x23c/0x5c0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979617]  dev_queue_xmit+0x10/0x20
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979618]  ip6_finish_output2+0x32f/0x510
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979620]  ip6_finish_output+0xa0/0x100
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979622]  ? ip6_finish_output+0xa0/0x100
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979623]  ip6_output+0x5b/0x100
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979625]  ip6_local_out+0x35/0x40
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979627]  ip6_send_skb+0x23/0x70
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979629]  udp_v6_send_skb+0x146/0x310
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979631]  udpv6_sendmsg+0x995/0xc70
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979633]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979635]  ? consume_skb+0x34/0x90
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979636]  ? _copy_from_user+0x36/0x70
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979639]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979640]  ? inet_sendmsg+0x31/0xb0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979642]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979644]  ___sys_sendmsg+0x2b6/0x2d0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979646]  ? current_time+0x38/0x70
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979648]  ? file_update_time+0x60/0x110
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979650]  __sys_sendmsg+0x54/0x90
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979652]  ? __sys_sendmsg+0x54/0x90
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979654]  SyS_sendmsg+0x12/0x20
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979669]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979670] RIP: 0033:0x7f3a0c3eaa50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979671] RSP: 002b:00007fff2f270b78 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979673] RAX: ffffffffffffffda RBX: 00007fff2f270710 RCX: 00007f3a0c3eaa50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979674] RDX: 0000000000000000 RSI: 00007fff2f270c30 RDI: 000000000000000d
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979675] RBP: 00007fff2f270b60 R08: 0000000000000000 R09: 0000000000000000
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979676] R10: 00000000000729aa R11: 0000000000000246 R12: 000000000000000c
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979677] R13: 0000000000000001 R14: 0000000000e87da0 R15: 0000000000000006
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979678] xmit dump stack-------------End
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979680] XMIT SUCCESS
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979695] __netif_receive_skb_core --->
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979697] CPU: 3 PID: 4634 Comm: tcpdump Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979698] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979698] Call Trace:
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979699]  <IRQ>
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979702]  dump_stack+0x63/0x82
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979704]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979706]  ? ttwu_do_wakeup+0x1e/0x140
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979707]  ? ttwu_do_activate+0x77/0x80
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979709]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979710]  process_backlog+0x9f/0x140
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979712]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979714]  __do_softirq+0xed/0x278
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979715]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979716]  </IRQ>
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979717]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979718]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979719]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979720]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979721]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979723]  ip_output+0x73/0xe0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979724]  ip_local_out+0x35/0x40
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979725]  ip_send_skb+0x19/0x40
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979727]  udp_send_skb+0x93/0x250
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979728]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979729]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979731]  ? __ip_route_output_key_hash+0x3fe/0x900
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979733]  ? ip4_datagram_release_cb+0x69/0x1c0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979734]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979736]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979737]  SYSC_sendto+0x101/0x190
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979738]  ? SYSC_connect+0xd9/0x110
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979740]  ? sock_alloc_file+0xa6/0x130
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979741]  SyS_sendto+0xe/0x10
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979743]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979744] RIP: 0033:0x7f60de35839d
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979745] RSP: 002b:00007ffd4e1a9f98 EFLAGS: 00000246 ORIG_RAX: 000000000000002c
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979746] RAX: ffffffffffffffda RBX: 000055bb9cbbe7c0 RCX: 00007f60de35839d
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979747] RDX: 000000000000005a RSI: 00007ffd4e1aa200 RDI: 0000000000000004
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979747] RBP: 0000000000000000 R08: 0000000000000000 R09: 0000000000000000
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979748] R10: 0000000000004000 R11: 0000000000000246 R12: 0000000000000000
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979749] R13: 0000000000000008 R14: 0000000000000400 R15: 000055bb9cbbe7c0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979750] -------------------END
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979750] Calling Function Pointer.....
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979820] __netif_receive_skb_core --->
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979822] CPU: 2 PID: 1018 Comm: dnsmasq Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979823] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979823] Call Trace:
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979825]  <IRQ>
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979827]  dump_stack+0x63/0x82
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979829]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979831]  ? task_curr+0x30/0x30
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979833]  ? ttwu_do_activate+0x77/0x80
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979834]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979836]  process_backlog+0x9f/0x140
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979838]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979840]  __do_softirq+0xed/0x278
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979842]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979843]  </IRQ>
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979844]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979845]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979847]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979848]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979850]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979851]  ip_output+0x73/0xe0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979853]  ip_local_out+0x35/0x40
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979854]  ip_send_skb+0x19/0x40
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979856]  udp_send_skb+0x93/0x250
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979858]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979859]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979862]  ? rw_copy_check_uvector+0x55/0x110
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979864]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979865]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979867]  ___sys_sendmsg+0x2b6/0x2d0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979869]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979870]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979873]  ? pick_next_task_fair+0x43a/0x560
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979875]  ? __switch_to+0x23c/0x450
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979877]  __sys_sendmsg+0x54/0x90
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979879]  ? __sys_sendmsg+0x54/0x90
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979881]  SyS_sendmsg+0x12/0x20
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979883]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979884] RIP: 0033:0x7fae0b75c450
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979885] RSP: 002b:00007ffeb69ce388 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979887] RAX: ffffffffffffffda RBX: 00007ffeb69ce5d0 RCX: 00007fae0b75c450
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979888] RDX: 0000000000000000 RSI: 00007ffeb69ce390 RDI: 0000000000000004
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979889] RBP: 0000000000000004 R08: 00007ffeb69ce5d0 R09: 00007ffeb69ce5b0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979890] R10: 0000000000000000 R11: 0000000000000246 R12: 00007ffeb69ce390
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979890] R13: 00007ffeb69ce5b0 R14: 0000564e3fb4c280 R15: 0000000000000004
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979894] INTERRUPT:
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979896] INTERRUPT DISABLED ON HW
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979897] NAPI INITITING
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979897] NAPI INITITING DONE
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979898] INTERRUPT ACKNOWLEDGED
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979900] -------------------END
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979901] Calling Function Pointer.....
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979904] NAPI POLL START -------------------- budget :64
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979906]  Interrupt Status : TX
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979925] NAPI Complete work_done :0 budget :64
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979925] NAPI done
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979926] INTERRUPT ENABLED ON HW
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979926] NAPI -------------------POLL END
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979963] __netif_receive_skb_core --->
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979965] CPU: 3 PID: 4634 Comm: tcpdump Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979966] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979966] Call Trace:
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979967]  <IRQ>
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979969]  dump_stack+0x63/0x82
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979971]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979973]  ? task_curr+0x30/0x30
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979975]  ? ttwu_do_activate+0x77/0x80
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979976]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979978]  process_backlog+0x9f/0x140
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979979]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979981]  __do_softirq+0xed/0x278
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979982]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979983]  </IRQ>
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979984]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979985]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979987]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979988]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979989]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979990]  ip_output+0x73/0xe0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979991]  ip_local_out+0x35/0x40
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979992]  ip_send_skb+0x19/0x40
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979994]  udp_send_skb+0x93/0x250
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979995]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979996]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.979998]  ? __ip_route_output_key_hash+0x3fe/0x900
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980000]  ? ip4_datagram_release_cb+0x69/0x1c0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980001]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980003]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980004]  SYSC_sendto+0x101/0x190
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980005]  ? SYSC_connect+0xd9/0x110
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980006]  ? sock_alloc_file+0xa6/0x130
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980008]  SyS_sendto+0xe/0x10
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980010]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980011] RIP: 0033:0x7f60de35839d
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980012] RSP: 002b:00007ffd4e1a9f98 EFLAGS: 00000246 ORIG_RAX: 000000000000002c
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980013] RAX: ffffffffffffffda RBX: 0000000000000001 RCX: 00007f60de35839d
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980014] RDX: 000000000000005a RSI: 00007ffd4e1aa200 RDI: 0000000000000004
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980014] RBP: 00007ffd4e1aa410 R08: 0000000000000000 R09: 0000000000000000
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980015] R10: 0000000000004000 R11: 0000000000000246 R12: 0000000000000000
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980015] R13: 0000000000000001 R14: 0000000000000000 R15: 00007f60de618a80
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980016] -------------------END
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980017] Calling Function Pointer.....
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980037] __netif_receive_skb_core --->
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980038] CPU: 2 PID: 1018 Comm: dnsmasq Tainted: G           OE   4.112.0-eudyptula112-01464-gd3b5d35-dirty #5
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980039] Hardware name: LENOVO 80LG/Lenovo B41-80, BIOS D7CN28WW(V3.01) 01/27/2016
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980040] Call Trace:
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980041]  <IRQ>
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980042]  dump_stack+0x63/0x82
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980045]  __netif_receive_skb_core+0x45/0xbc0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980047]  ? printk+0x52/0x6e
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980049]  ? kfree_skbmem+0x56/0x60
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980051]  __netif_receive_skb+0x18/0x60
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980053]  process_backlog+0x9f/0x140
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980054]  net_rx_action+0x1dd/0x300
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980057]  __do_softirq+0xed/0x278
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980058]  do_softirq_own_stack+0x1c/0x30
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980059]  </IRQ>
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980061]  do_softirq.part.18+0x41/0x50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980062]  __local_bh_enable_ip+0x5a/0x60
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980064]  ip_finish_output2+0x199/0x390
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980065]  ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980066]  ? ip_finish_output+0x12c/0x1d0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980068]  ip_output+0x73/0xe0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980070]  ip_local_out+0x35/0x40
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980071]  ip_send_skb+0x19/0x40
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980073]  udp_send_skb+0x93/0x250
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980074]  udp_sendmsg+0x34e/0x9a0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980076]  ? ip_do_fragment+0x820/0x820
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980090]  ? rw_copy_check_uvector+0x55/0x110
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980092]  inet_sendmsg+0x31/0xb0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980094]  sock_sendmsg+0x38/0x50
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980096]  ___sys_sendmsg+0x2b6/0x2d0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980097]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980099]  ? poll_select_copy_remaining+0x150/0x150
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980101]  ? pick_next_task_fair+0x43a/0x560
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980103]  ? __switch_to+0x23c/0x450
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980105]  __sys_sendmsg+0x54/0x90
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980106]  ? __sys_sendmsg+0x54/0x90
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980108]  SyS_sendmsg+0x12/0x20
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980110]  entry_SYSCALL_64_fastpath+0x1e/0xa9
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980111] RIP: 0033:0x7fae0b75c450
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980112] RSP: 002b:00007ffeb69ce388 EFLAGS: 00000246 ORIG_RAX: 000000000000002e
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980114] RAX: ffffffffffffffda RBX: 00007ffeb69ce5d0 RCX: 00007fae0b75c450
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980115] RDX: 0000000000000000 RSI: 00007ffeb69ce390 RDI: 0000000000000004
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980115] RBP: 0000000000000004 R08: 00007ffeb69ce5d0 R09: 00007ffeb69ce5b0
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980116] R10: 0000000000000000 R11: 0000000000000246 R12: 00007ffeb69ce390
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980117] R13: 00007ffeb69ce5b0 R14: 0000564e3fb4c280 R15: 0000000000000004
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980118] -------------------END
+Aug 20 11:12:41 vkalyanam-Lenovo-B41-80 kernel: [ 1360.980119] Calling Function Pointer.....
+Aug 20 11:12:52 vkalyanam-Lenovo-B41-80 kernel: [ 1372.140305] device enp1s0 left promiscuous mode
